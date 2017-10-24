@@ -1,0 +1,15 @@
+<h1> Add Post </h1>
+<%= form_for :post, url: posts_path do |f|%>
+
+<span class="input-group-addon" id="basic-addon1"><%= f.label :title %></span>
+<%= f.text_field :title, class: "col-md-12", placeholder: "Write the title" %>
+</div>
+<br>
+<span class="input-group-addon" id="basic-addon1">Body</span>
+<%= f.text_field :body, class: "col-md-12", placeholder: "Write the body" %>
+</div>
+<br>
+<div style="text-align: center;">
+  <%= f.submit "Submit", class: "btn btn-default btn-primary", style: "margin-top: 15px;" %>
+</div>
+<% end %>
