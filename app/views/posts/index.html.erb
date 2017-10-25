@@ -4,6 +4,7 @@
     <tr>
       <th scope="col">Title</th>
       <th scope="col">Body</th>
+      <th scope="col">Read More</th>
     </tr>
   </thead>
   <tbody>
@@ -11,6 +12,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
+        <td><%= link_to "Read More", post_path(post), :class => "btn btn-default" %></td>
       </tr>
       <% end %>
   </tbody>
